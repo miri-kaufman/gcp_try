@@ -15,4 +15,8 @@ resource "google_storage_bucket" "static-site" {
     response_header = ["*"]
     max_age_seconds = 3600
   }
+  labels = {
+    yor_name  = "static-site"
+    yor_trace = "f75f01e9-84b8-4078-a94a-3efc17cdda58"
+  }
 }
